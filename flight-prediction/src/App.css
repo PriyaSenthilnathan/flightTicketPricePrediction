@@ -1,0 +1,79 @@
+/* Custom styles for Flight Price Predictor */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Smooth transitions for form elements */
+select, input, button {
+  transition: all 0.3s ease;
+}
+
+/* Custom shadow for the form */
+.shadow-xl {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Animation for the prediction result */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply animation to prediction result */
+.prediction-result {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Custom scrollbar for select elements */
+select::-webkit-scrollbar {
+  width: 8px;
+}
+
+select::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0 4px 4px 0;
+}
+
+select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+select::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .text-4xl {
+    font-size: 2rem;
+  }
+  
+  .p-8 {
+    padding: 1.5rem;
+  }
+}
+
+/* Flight Animation */
+@keyframes fly {
+  0% { transform: translateX(-100px) rotate(0deg); }
+  50% { transform: translateX(50vw) rotate(5deg); }
+  100% { transform: translateX(100vw) rotate(0deg); }
+}
+
+.flight-icon {
+  animation: fly 5s linear infinite;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 255, 0.3));
+}
+
+/* Button hover effect */
+.get-started-btn {
+  transition: all 0.3s ease;
+}
+
+.get-started-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 255, 0.2);
+}
