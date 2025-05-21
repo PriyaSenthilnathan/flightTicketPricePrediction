@@ -55,7 +55,7 @@ function FlightPricePredictor() {
             Predict Your Flight Ticket Price
           </h1>
           <p className="text-xl text-gray-600 mb-8 text-center max-w-lg">
-            Get the best price estimates for your next trip!
+            Know your airfare before you book!
           </p>
 
           {/* "Get Started" Button */}
