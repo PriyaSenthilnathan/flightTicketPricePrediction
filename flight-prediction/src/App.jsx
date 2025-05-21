@@ -52,7 +52,7 @@ function FlightPricePredictor() {
         // Landing Page with Flight Animation
         <div className="flex flex-col items-center justify-center h-screen -mt-20">
           <h1 className="text-5xl font-bold text-blue-800 mb-6 text-center">
-            Predict Your Flight Ticket Price
+            Predict Your Flight Ticket Price here
           </h1>
           <p className="text-xl text-gray-600 mb-8 text-center max-w-lg">
             Know your airfare before you book!
